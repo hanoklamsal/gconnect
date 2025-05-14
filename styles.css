@@ -1,0 +1,237 @@
+:root {
+  box-sizing: border-box;
+  --cta-color: #ffa500;
+  --cta-hover-color: #ff8c00;
+}
+
+.contact-entities a {
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: rgb(255, 250, 238);
+  height: 100%;
+}
+
+.navbar {
+  background-image: url("./assets/headerBG.jpg");
+}
+
+#hero {
+  background-image: url("./assets/heroBG.jpg");
+}
+
+.contact-btn {
+  background-color: var(--cta-color) !important;
+}
+
+.contact-btn:hover {
+  background-color: var(--cta-hover-color);
+}
+
+nav ul a:focus {
+  border-bottom: solid 2px red;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  color: orange !important;
+}
+
+.hero-span {
+  color: #ff8c00;
+}
+
+.col-md-6.text-center {
+  position: relative;
+}
+
+.floating-img {
+  position: absolute;
+  width: 10vw;
+  max-width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.floating-img-1 {
+  top: 8%;
+  left: 25%;
+}
+
+.floating-img-2 {
+  top: 5%;
+  left: 60%;
+}
+
+.floating-img-3 {
+  top: 10%;
+  left: 70%;
+}
+
+.floating-img-4 {
+  top: 10%;
+  left: 15%;
+}
+
+.floating-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .floating-img {
+    width: 14vw;
+    max-width: 40px;
+  }
+
+  .floating-img-1 {
+    top: 12%;
+    left: 22%;
+  }
+
+  .floating-img-2 {
+    top: 10%;
+    left: 55%;
+  }
+
+  .floating-img-3 {
+    top: 14%;
+    left: 65%;
+  }
+
+  .floating-img-4 {
+    top: 14%;
+    left: 12%;
+  }
+}
+
+#records {
+  background-color: rgb(255, 250, 238);
+}
+
+.record-item {
+  background: linear-gradient(to bottom, #2ec4b6, #a1ece3);
+  border-radius: 1rem;
+}
+
+.record-item p {
+  color: #e8840a;
+}
+
+.tab-button {
+  border-radius: 1rem;
+  border: solid 1px rgb(121, 93, 15);
+  padding: 0 8px;
+}
+
+.tab-button:hover {
+  background-color: black;
+  color: white;
+}
+
+button.active {
+  background-color: black;
+  color: white;
+}
+
+.contentWrapper {
+  padding: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+#services img {
+  height: 200px;
+  border-bottom: solid 1px orange;
+}
+
+.service-card > div > div {
+  border: solid 1px orange;
+}
+
+.contentWrapper h2 {
+  text-align: center;
+}
+
+.social-icon {
+  color: #2ec4b6;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  height: 400px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #777;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffa500;
+}
+
+.modal-content {
+  position: absolute;
+  height: 50vh;
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.whatsapp-button a {
+  display: block;
+}
+
+.whatsapp-button img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
